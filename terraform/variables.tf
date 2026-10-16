@@ -17,7 +17,8 @@ variable "kubernetes_version" {
 }
 
 variable "node_instance_type" {
-  description = "EC2 instance type for EKS worker nodes"
+  description = "EKS worker node instance type"
   type        = string
-  node_instance_type = "t3.small"
+  default     = "t3.small"
+}
 }
